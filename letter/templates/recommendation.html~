@@ -1,0 +1,4 @@
+<form action="http://recletter.artiswrong.com/submit" method="post">
+Your name:  <input type="text" name="name">
+Why you think Alex should keep working on the Solar Pocket Factory at the University of Lisbon: <input type="textarea" name="rec">
+<input type="submit" value="submit">
