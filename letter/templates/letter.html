@@ -1,5 +1,12 @@
+<hr id="letter">
 {% for letter in letters %}
 <div class="rec">
   <div class="rec-name">{{ letter.name }}</div> says:<div class="rec-text">{{ letter.rec|linebreaks }}</div>
 </div>
 {% endfor %}
+<div id="signature-wrapper">
+  <div id="signature">
+    <div id="valediction">Sincerely Yours,</div>
+    <div id="the-crowd">--the crowd</div>
+  </div>
+</div>
