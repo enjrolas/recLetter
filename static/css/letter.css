@@ -186,33 +186,41 @@ button#submit{
    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
 
+div#sharing{
+    width: 50%;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: block;
+}
 
-html, body {height: 100%;}
+div#sharing-text{
+    width: 60%;
+    float: left;
+    font-size: 75%;
+}
+div#social-media{
+    width: 30%;
+    float: left;
+}
+div#twitter{
+    float:left;
+}
+div#facebook{
+    margin-top: 5px;
+    float:left;
+}
 
-#wrap {min-height: 100%;}
-
-#main {overflow:auto;
-       padding-bottom: 150px;}  /* must be same height as the footer */
-
-#footer {
-    position: relative;
+div#footer {
+	 display:block;
 	 width: 65%;
 	 margin: auto;
+
 /*  make that text blurry and woodburnt */
 /*   color: transparent; */
    text-shadow: 0 0 1px rgba(0,0,0,0.5);
-	 margin-top: -150px; /* negative value of footer height */
 	 height: 150px;
 	 clear:both;
-	 padding: 50px 5px;
+	 padding: 5px
+	 margin-top: 50px;
 } 
-
-/*Opera Fix*/
-body:before {
-    content:"";
-    height:100%;
-    float:left;
-    width:0;
-    margin-top:-32767px;/
-    
-}

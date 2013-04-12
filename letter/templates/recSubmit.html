@@ -1,8 +1,10 @@
-{% extends "base.html" %}
-{% block content %}
-<div id="message">Thanks for adding your voice to the fray.  Here's what the letter looks like so far:</div>
-<div class="title recommendation">Letter of Recommendation</div>
-<div class="letter">
-{% include  "letter.html" %}
+{% extends "recLetter.html" %}
+{% block message %}
+<div id="message">
+  Thanks for adding your voice to the fray.  Here's what the letter looks like so far:
+
 </div>
+{% endblock %}
+{% block sharing %}
+{% include "sharing.html" %}
 {% endblock %}

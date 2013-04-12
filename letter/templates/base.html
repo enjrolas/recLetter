@@ -1,17 +1,27 @@
 <html>
   <head>
-    <title>Crowdsourcing a rec letter</title>
+    <title>Crowdsourcing a rec letter, one fan at a time</title>
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
     <LINK href="{{ STATIC_URL }}css/letter.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Miss+Fajardose' rel='stylesheet' type='text/css'>
   </head>
   <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=235014456272";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <div id="wrap">
       <div id="main">
 	{% block content %}
 	{% endblock %}
       </div>
   </div>
+    {% block sharing %}
+    {% endblock %}
   <div id="footer">
     Like this approach and want to adapt it for your own purposes?  Awesome!  All you need is a fresh install of django, a young pair of legs and a strong back to go in after it. <br/>Get yer <a href="https://github.com/enjrolas/recLetter">source here</a>
   </div>

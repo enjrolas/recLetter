@@ -8,11 +8,11 @@ from letter.models import Recommendation
 import os
 
 def recLetter(request):
-    recs=Recommendation.objects.filter(type='rec')
+    recs=Recommendation.objects.filter(type='rec').order_by('-dateAdded')
     return render(request, 'recLetter.html',{'letters': recs})    
 
 def conLetter(request):
-    cons=Recommendation.objects.filter(type='con')
+    cons=Recommendation.objects.filter(type='con').order_by('-dateAdded')
     return render(request, 'conLetter.html',{'letters': cons})    
 
 def home(request):
@@ -30,9 +30,8 @@ def submit(request):
         rec=Recommendation(name=_name,rec=_rec,type=_type)
         rec.save()
     if _type=="con":
-        cons=Recommendation.objects.filter(type='con')
-        return render(request, 'recSubmit.html',{'letters': cons})    
+        cons=Recommendation.objects.filter(type='con').order_by('-dateAdded')
+        return render(request, 'conSubmit.html',{'letters': cons})    
     else:
-        recs=Recommendation.objects.filter(type='rec')
+        recs=Recommendation.objects.filter(type='rec').order_by('-dateAdded')
         return render(request, 'recSubmit.html',{'letters': recs})    
-

@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
+{% block message %}
+{% endblock %}
 <div class="title recommendation">Letter of Recommendation</div>
-
 <div class="letter">
   <div id="letterhead">
     <img class="letterhead" id="letterhead-left" src="{{ MEDIA_URL }}/images/pocket.png" width="10%" height="auto">
@@ -11,4 +12,7 @@
 
 {% include  "letter.html" %}
 </div>
+{% endblock %}
+{% block sharing %}
+{% include "sharing.html" %}
 {% endblock %}
