@@ -14,18 +14,19 @@ here's my little directory structure
 
     ~
      |-media
-     | |-recLetter
-     | |-solarPocketFactory
-     | |-other django projects
+     |   |-recLetter
+     |   |-solarPocketFactory
+     |   |-other django projects
+     |
      |-static
-     | |-recLetter
-     | |-solarPocketFactory
-     | |-other django projects
+     |   |-recLetter
+     |   |-solarPocketFactory
+     |   |-other django projects
      |
      |-recLetter (home of the django project)
-       |-static (symlinked to the recletter directory above in ~/static)
-       |-media (symlinked to the recletter directory above in ~/media)
-       |-other django stuff
+         |-static (symlinked to the recletter directory above in ~/static)
+         |-media (symlinked to the recletter directory above in ~/media)
+         |-other django stuff
      
      
 And just to throw in the kitchen sink, here's my virtual host configuration from apache.
