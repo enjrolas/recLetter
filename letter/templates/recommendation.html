@@ -1,11 +1,10 @@
-
 <div id="recommendation" class="alpha">
 <form action="/submit/" method="post">
 {% csrf_token %}
 <div id="image"><img id="SPF" src="{{ MEDIA_URL }}/images/pocket.png" width="15%" height="auto"></div>
 <div id="name">Your name:</div><input id="name" type="text" name="name" class="alpha60">
 
-<div id="prompt">What do you think about Alex continuing to work on the Solar Pocket Factory at the University of Lisbon?</div>
+<div id="prompt">What do you think about Alex continuing to work on the <a href="http://solarpocketfactory.com/">Solar Pocket Factory</a> at the <a href="http://www.mitportugal.org/sustainable-energy-systems/phd-program.html">University of Lisbon</a>?</div>
 
 <textarea id="rec" name="rec" class="alpha60"></textarea>
 <input type="hidden" name="type" value="rec">

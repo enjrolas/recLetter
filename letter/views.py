@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect
 from django.http import HttpResponse
 from django.utils import timezone
 from django.core import serializers
-from recommendation.models import Recommendation
+from letter.models import Recommendation
 import os
 
 def recLetter(request):
