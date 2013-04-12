@@ -4,6 +4,7 @@
     <link href='http://fonts.googleapis.com/css?family=Miss+Fajardose' rel='stylesheet' type='text/css'>
   </head>
   <body>
+    
     <div id="wrap">
       <div id="main">
   {% block content %}
