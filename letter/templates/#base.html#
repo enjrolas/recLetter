@@ -1,18 +1,18 @@
 <html>
   <head>
-    <LINK href="http://www.artiswrong.com/static/recLetter/css/letter.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <LINK href="{{ STATIC_URL }}css/letter.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Miss+Fajardose' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    
     <div id="wrap">
       <div id="main">
-  {% block content %}
-  {% endblock %}
-  </div>
+	{% block content %}
+	{% endblock %}
+      </div>
   </div>
   <div id="footer">
-    Like this approach and want to adapt it for your own purposes?  Awesome!  All you need is a fresh install of django, a good pair of legs and a strong back to go in after it. <br/>Get yer <a href="https://github.com/enjrolas/recLetter">source here</a>.
+    Like this approach and want to adapt it for your own purposes?  Awesome!  All you need is a fresh install of django, a good pair of legs and a strong back to go in after it. <br/>Get yer <a href="https://github.com/enjrolas/recLetter">source here</a>
   </div>
   </body>
 </html>
