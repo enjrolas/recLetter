@@ -1,7 +1,12 @@
 <div id="recommendation">
-<form action="http://recletter.artiswrong.com/submit" method="post">
+<form action="/submit/" method="post">
+{% csrf_token %}
 Your name:  <input type="text" name="name">
 Why you think Alex should keep working on the Solar Pocket Factory at the University of Lisbon: <input type="textarea" name="rec">
+<input type="hidden" name="type" value="rec">
 <input type="submit" value="submit">
 </form>
+
+<div id="option">Do you think that Alex <i>shouldn't</i> work on this project at UL?  You may prefer to contribute to the <a href="recondemnation.html">letter of recondemnation</a> (will also be sent in with Alex's application)</div>
+
 </div>

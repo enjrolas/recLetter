@@ -1,8 +1,8 @@
 from django.db import models
 
-class Recommendation():
+class Recommendation(models.Model):
     name=models.TextField()
-    letter=models.TextField()
+    rec=models.TextField()
     type=models.TextField()
     date=models.DateField(auto_now=True)
     

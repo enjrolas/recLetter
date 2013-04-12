@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="message">
+  Thanks for adding your voice to the fray.  Here's what the letter looks like so far:
+</div>
+<div class="recs">
+{% include letter.html %}
+</div>
+{% endblock %}
