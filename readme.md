@@ -37,7 +37,7 @@ And just to throw in the kitchen sink, here's my virtual host configuration from
 
              <IfModule mod_rewrite.c>
                  RewriteEngine On
-	     </IfModule>
+             </IfModule>
 
              Alias /robots.txt /home/japhy/recLetter/static/robots.txt
              Alias /favicon.ico /home/japhy/recLetter/static/favicon.ico
