@@ -1,7 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
 <div class="cons">
-{% for letter in letters %}
-<div class="letter">
-  <div class="letter-name">{{ letter.name }}</div> says:<div class="letter-text">{{ letter.rec }}</div>
+{% include  "letter.html" %}
 </div>
-{% endfor %}
-</div>
+{% endblock %}

@@ -8,18 +8,18 @@ from recommendation.models import Recommendation
 import os
 
 def recLetter(request):
-    recs=Recommendation.objects.filter(type='recs')
-    cons=Recommendation.objects.filter(type='cons')
-    return render(request, 'recLetter.html',{recs: recs, cons: cons})    
-
+    recs=Recommendation.objects.filter(type='rec')
+    return render(request, 'recLetter.html',{'letters': recs})    
 
 def conLetter(request):
-    recs=Recommendation.objects.filter(type='recs')
-    cons=Recommendation.objects.filter(type='cons')
-    return render(request, 'conLetter.html',{recs: recs, cons: cons})    
+    cons=Recommendation.objects.filter(type='con')
+    return render(request, 'conLetter.html',{'letters': cons})    
 
 def home(request):
     return render(request, 'home.html')
+
+def recondemnation(request):
+    return render(request, 'recondemnation.html')
 
 def submit(request):
     _type=""
@@ -31,7 +31,7 @@ def submit(request):
         rec.save()
     if _type=="con":
         cons=Recommendation.objects.filter(type='con')
-        return render(request, 'conSubmit.html',{'letters': cons})    
+        return render(request, 'recSubmit.html',{'letters': cons})    
     else:
         recs=Recommendation.objects.filter(type='rec')
         return render(request, 'recSubmit.html',{'letters': recs})    
